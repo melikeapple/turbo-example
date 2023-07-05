@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "test:web": "turbo run test --filter=web",
+    "test:web:watch": "turbo run test:watch --filter=web",
+    "test:ui": "turbo run test --filter=ui",
+    "test:ui:watch": "turbo run test:watch --filter=ui",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@turbo/gen": "^1.9.7",
+    "@types/jest": "^29.5.2",
+    "dotenv-cli": "^7.2.1",
+    "esbuild": "^0.18.11",
+    "esbuild-jest": "^0.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-watch-typeahead": "^2.2.2",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "name": "e0882108c54e",
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

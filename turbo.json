@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "env": ["NEXT_PUBLIC_API_URL"],
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "test": {},
+    "test:watch": {
+      "cache": false
+    },
+    "lint": {},
+    "dev": {
+      "env": ["NEXT_PUBLIC_API_URL"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
